@@ -1,0 +1,36 @@
+1. create a project folder
+2. open terminal -> npm init -y
+
+
+Node -> javascript runtime -> executes javascript code 
+
+npm init -y -> initialise node package manager in this folder 
+-> node initalise 
+
+
+vite-> package.json control 
+
+Node-> backend 
+
+3. npm install express
+
+
+
+
+
+
+
+MIDDLEWARE
+
+middleware is a function that runs between the process of handling a route
+meaning
+that it executes just after the request is recieved and before the response is sent
+
+how to implement middleware
+1. app.method("path", middleware function, callback function);
+2. app.use(middleware logic)
+
+Middleware Types:
+SECURITY 
+1. built in -> client request -> JSON -> express.json(), jwt
+2. custom -> logging, monitoring, analytics
