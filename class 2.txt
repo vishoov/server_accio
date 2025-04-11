@@ -34,3 +34,68 @@ Middleware Types:
 SECURITY 
 1. built in -> client request -> JSON -> express.json(), jwt
 2. custom -> logging, monitoring, analytics
+
+
+MVC Architecture, RESTful APIs, user management API 
+
+
+RESTFUL APIs
+
+Server side application 
+
+to access our server and to structure it -> API -> Application Programming interface
+
+Scalable System -> it is able to handle large number of users 
+
+Efficient -> there is no extra unecessary space being required or time being taken 
+
+API to access server  -> buffering X    
+
+Principle -> Whatever information is required by a client to access any data from the API
+            should be sent from the client's end, and no data shuld be saved on the server
+
+            RESTful -> Representational State Transfer
+                    -> Representational = whatever it is requesting, it should be there 
+                    along with the request  
+
+            dynamic -> router parameter -> declared req.params.name
+
+            WE DO NOT ASSUME ANYTHING IN TERMS OF DATA
+
+            /login -> email, password , /signup -> user info, /home -> identify the user 
+
+
+            /login -> username or email, password 
+
+            /search -> query -> route query 
+
+            RESTful -> routes are individual 
+
+
+    - Uniform -> same system design 
+    - Stateless -> it should not save any data on the server fpr a user to complete a route 
+    - Layered System -> server security -> API security  -> user information security 
+    -> password encryption 
+    - CODE ON DEMAND -> whatever whenever is needed should only be supplied then 
+
+
+    10 routes-> login, signup, home, landing, update password, delete account 
+
+
+    MVC Architecture 
+
+
+    Model View Controller Architecture 
+
+    --> index.js has become too crowded 
+    -> whenever we execute it, even unecessary code is also being rendered 
+
+
+    - our server might become SLOW! 
+    - code instances will increase -> server laggy -> more instances = more memory requirement 
+
+    -> Model, View, Controller
+    -> data schema/structure, routes, handler functions, security, middleware 
+
+    -> single file -> modular project -> code on demand -> whenever needed i'll call that function from a different module
+    present in the folders in the directory 
